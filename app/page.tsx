@@ -1,13 +1,13 @@
-import HeroSection from "@/components/long-a/HeroSection";
-import TimelineSection from "@/components/long-a/TimelineSection";
-import GallerySection from "@/components/long-a/GallerySection";
-import MapSection from "@/components/long-a/MapSection";
-import FloorPlansSection from "@/components/long-a/FloorPlansSection";
-import StatisticsSection from "@/components/long-a/StatisticsSection";
-import BenefitsSection from "@/components/long-a/BenefitsSection";
-import SwiperGallery from "@/components/long-a/SwiperGallery";
-import ContactForm from "@/components/long-a/ContactForm";
-import Footer from "@/components/long-a/Footer";
+import HeroSection from "@/components/HeroSection";
+import TimelineSection from "@/components/TimelineSection";
+import GallerySection from "@/components/GallerySection";
+import MapSection from "@/components/MapSection";
+import FloorPlansSection from "@/components/FloorPlansSection";
+import StatisticsSection from "@/components/StatisticsSection";
+import BenefitsSection from "@/components/BenefitsSection";
+import SwiperGallery from "@/components/SwiperGallery";
+import ContactForm from "@/components/ContactForm";
+import Footer from "@/components/Footer";
 
 export default function HomePage() {
   const availableUnits = 12; // From GraphQL stub
