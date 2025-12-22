@@ -1,10 +1,10 @@
-import Link from 'next/link'
-import { Metadata } from 'next'
+import Link from "next/link";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Richiesta inviata - Residenza Sardagna',
-  description: 'Grazie per averci contattato',
-}
+  title: "Richiesta inviata - Residenza Ai Tigli",
+  description: "Grazie per averci contattato",
+};
 
 export default function RichiestaInviataPage() {
   return (
@@ -21,5 +21,5 @@ export default function RichiestaInviataPage() {
         </div>
       </div>
     </section>
-  )
+  );
 }

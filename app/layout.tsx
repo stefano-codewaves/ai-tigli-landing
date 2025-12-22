@@ -15,8 +15,8 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Residenza Sardagna - Due Nuove Palazzine",
-  description: "24 unità abitative a soli 500 metri dalla funivia di Sardagna",
+  title: "Residenza Ai Tigli - Nuova Palazzina",
+  description: "6 unità abitative esclusive nel cuore di Marano d'Isera",
 };
 
 export default function RootLayout({

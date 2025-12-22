@@ -2,8 +2,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - Residenza Sardagna",
-  description: "Informativa sulla privacy per Residenza Sardagna",
+  title: "Privacy Policy - Residenza Ai Tigli",
+  description: "Informativa sulla privacy per Residenza Ai Tigli",
 };
 
 export default function PrivacyPolicyPage() {
