@@ -2,8 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import dayjs from "dayjs";
-import logoFormImage from "@/public/landings/sardagna/svg/long/logo-form.svg";
+import logoFormImage from "@/public/landings/tigli/svg/tigli-watermark.svg";
 
 export default function ContactForm() {
   const [sending, setSending] = useState(false);
