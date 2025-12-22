@@ -15,7 +15,7 @@ export default function FloorPlansSection({ data }: FloorPlansSectionProps) {
   return (
     <section className="w-full max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-6.5xl mx-auto !mt-30 xl:!mt-50">
       <div className="px-[1.5rem] sm:px-0">
-        <h2 className="text-sardagna-primary text-4xl sm:text-4.5xl font-semibold !leading-tight mb-6 text-center w-full">
+        <h2 className="text-primary text-4xl sm:text-4.5xl font-semibold !leading-tight mb-6 text-center w-full">
           {data.title}
         </h2>
         <p className="text-black text-lg mb-16 max-w-[40ch] !leading-relaxed text-center mx-auto">
@@ -36,11 +36,11 @@ export default function FloorPlansSection({ data }: FloorPlansSectionProps) {
                 currentTab === index && "active"
               )}
             >
-              <span className="text-black font-semibold text-lg sm:text-xl md:text-1.5xl xl:text-2xl !leading-relaxed group-[&.active]:!text-sardagna-primary">
+              <span className="text-black font-semibold text-lg sm:text-xl md:text-1.5xl xl:text-2xl !leading-relaxed group-[&.active]:!text-primary">
                 {plan.title}
               </span>
-              <span className="absolute left-0 w-full h-[2px] -bottom-[2px] bg-sardagna-primary hidden group-[&.active]:!block">
-                <span className="absolute w-3.5 h-3.5 aspect-square -bottom-[2px] rotate-45 bg-white border-r-[2px] border-b-[2px] border-sardagna-primary top-1/2 -translate-y-[calc(50%-1px)] left-1/2 -translate-x-1/2"></span>
+              <span className="absolute left-0 w-full h-[2px] -bottom-[2px] bg-primary hidden group-[&.active]:!block">
+                <span className="absolute w-3.5 h-3.5 aspect-square -bottom-[2px] rotate-45 bg-white border-r-[2px] border-b-[2px] border-primary top-1/2 -translate-y-[calc(50%-1px)] left-1/2 -translate-x-1/2"></span>
               </span>
             </button>
           ))}
@@ -67,7 +67,7 @@ export default function FloorPlansSection({ data }: FloorPlansSectionProps) {
             <span className="text-gray-500 italic text-lg xl:text-xl !leading-none text-center xl:text-left">
               {plan.priceLabel}
             </span>
-            <h3 className="text-sardagna-primary text-6xl sm:text-6.5xl md:text-7xl xl:text-8xl font-bold mb-10 md:mb-15 mt-3 text-center xl:text-left">
+            <h3 className="text-primary text-6xl sm:text-6.5xl md:text-7xl xl:text-8xl font-bold mb-10 md:mb-15 mt-3 text-center xl:text-left">
               {plan.size}
             </h3>
             <div>

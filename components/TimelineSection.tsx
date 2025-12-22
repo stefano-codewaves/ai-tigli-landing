@@ -22,7 +22,7 @@ export default function TimelineSection({ data }: TimelineSectionProps) {
           </div>
           <div className="relative flex-shrink-0 -mt-20 sm:-mt-26 xl:mt-0 xl:-ml-24">
             <h2
-              className="text-sardagna-primary text-3.5xl sm:text-4.5xl font-semibold max-w-[22ch] !leading-tight text-center xl:text-left"
+              className="text-primary text-3.5xl sm:text-4.5xl font-semibold max-w-[22ch] !leading-tight text-center xl:text-left"
               dangerouslySetInnerHTML={{ __html: data.title }}
             />
           </div>

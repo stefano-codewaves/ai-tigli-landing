@@ -130,7 +130,7 @@ export default function ContactForm() {
             />
           </div>
 
-          <h2 className="text-sardagna-primary text-4xl sm:text-4.5xl font-semibold !leading-tight mb-6 text-center w-full">
+          <h2 className="text-primary text-4xl sm:text-4.5xl font-semibold !leading-tight mb-6 text-center w-full">
             Richiedi informazioni
           </h2>
           <p className="text-black text-lg mb-16 max-w-[40ch] !leading-relaxed text-center mx-auto">
@@ -152,7 +152,7 @@ export default function ContactForm() {
                     })
                   }
                   name="fullname"
-                  className="pt-4 px-4 border !border-gray-300 !border-b-sardagna-primary focus:!bg-white focus:!ring-1 text-center focus:!border-sardagna-primary focus:!ring-sardagna-primary bg-transparent outline-none h-16 text-dark text-lg lg:text-lg peer"
+                  className="pt-4 px-4 border !border-gray-300 !border-b-primary focus:!bg-white focus:!ring-1 text-center focus:!border-primary focus:!ring-primary bg-transparent outline-none h-16 text-dark text-lg lg:text-lg peer"
                   placeholder=" "
                   type="text"
                 />
@@ -180,7 +180,7 @@ export default function ContactForm() {
                     })
                   }
                   name="phone"
-                  className="pt-4 px-4 border !border-gray-300 !border-b-sardagna-primary focus:!bg-white focus:!ring-1 text-center focus:!border-sardagna-primary focus:!ring-sardagna-primary bg-transparent outline-none h-16 text-dark text-lg lg:text-lg peer"
+                  className="pt-4 px-4 border !border-gray-300 !border-b-primary focus:!bg-white focus:!ring-1 text-center focus:!border-primary focus:!ring-primary bg-transparent outline-none h-16 text-dark text-lg lg:text-lg peer"
                   placeholder=" "
                   type="text"
                 />
@@ -208,7 +208,7 @@ export default function ContactForm() {
                     })
                   }
                   name="email"
-                  className="pt-4 px-4 border !border-gray-300 !border-b-sardagna-primary focus:!bg-white focus:!ring-1 text-center focus:!border-sardagna-primary focus:!ring-sardagna-primary bg-transparent outline-none h-16 text-dark text-lg lg:text-lg peer"
+                  className="pt-4 px-4 border !border-gray-300 !border-b-primary focus:!bg-white focus:!ring-1 text-center focus:!border-primary focus:!ring-primary bg-transparent outline-none h-16 text-dark text-lg lg:text-lg peer"
                   placeholder=" "
                   type="email"
                 />
@@ -242,21 +242,19 @@ export default function ContactForm() {
                       id="privacy"
                       name="privacy"
                       type="checkbox"
-                      className="focus:ring-black opacity-0 text-sardagna-primary border-transparent border-2 cursor-pointer h-7 w-7"
+                      className="focus:ring-black opacity-0 text-primary border-transparent border-2 cursor-pointer h-7 w-7"
                     />
                     <div
                       className={`absolute w-full h-full top-0 left-0 border border-black bg-transparent pointer-events-none flex justify-center items-center ${
-                        form.privacy
-                          ? "!bg-transparent !border-sardagna-primary"
-                          : ""
+                        form.privacy ? "!bg-transparent !border-primary" : ""
                       }`}
                     >
                       <div
-                        className={`!border-2 p-[2px] md:p-[4px] !border-sardagna-primary h-full w-full opacity-0 relative z-10 flex items-center justify-center ${
+                        className={`!border-2 p-[2px] md:p-[4px] !border-primary h-full w-full opacity-0 relative z-10 flex items-center justify-center ${
                           form.privacy ? "!opacity-100 !bg-transparent" : ""
                         }`}
                       >
-                        <div className="bg-sardagna-primary w-full h-full"></div>
+                        <div className="bg-primary w-full h-full"></div>
                       </div>
                     </div>
                   </span>
@@ -269,7 +267,7 @@ export default function ContactForm() {
                       <a
                         href="/privacy-policy"
                         target="_blank"
-                        className="underline text-sardagna-primary hover:opacity-80 transition-all"
+                        className="underline text-primary hover:opacity-80 transition-all"
                       >
                         Privacy Policy
                       </a>
@@ -289,7 +287,7 @@ export default function ContactForm() {
               <button
                 type="button"
                 onClick={checkForm}
-                className="bg-sardagna-primary xl:hover:bg-sardagna-primaryHover transition-all py-6.5 px-14 font-medium text-white inline-flex items-center justify-center w-full"
+                className="bg-primary xl:hover:bg-primaryHover transition-all py-6.5 px-14 font-medium text-white inline-flex items-center justify-center w-full"
               >
                 {sending ? (
                   <svg

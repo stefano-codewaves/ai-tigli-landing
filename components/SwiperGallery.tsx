@@ -201,9 +201,9 @@ export default function SwiperGallery({ data }: SwiperGalleryProps) {
       </div>
 
       <div className="w-full max-w-[calc(100%-3rem)] sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-7.5xl px-0 relative h-[2px] mt-14 sm:mt-18 mx-auto">
-        <div className="absolute top-0 w-full !h-[2px] -left-[1px] w-[calc(100%+2px)] bg-sardagna-primary/20">
+        <div className="absolute top-0 w-full !h-[2px] -left-[1px] w-[calc(100%+2px)] bg-primary/20">
           <div
-            className="swiper-scrollbar !left-0 overflow-hidden !h-[2px] bg-sardagna-primary transition-all"
+            className="swiper-scrollbar !left-0 overflow-hidden !h-[2px] bg-primary transition-all"
             style={{ width: `${percent}%` }}
           />
         </div>

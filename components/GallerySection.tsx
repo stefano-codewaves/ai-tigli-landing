@@ -10,14 +10,12 @@ export default function GallerySection({ data }: GallerySectionProps) {
     <section className="w-full max-w-[calc(100%-3rem)] sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-7.5xl mx-auto !mt-16 sm:!mt-30 xl:!mt-0">
       <div className="w-full flex flex-col xl:flex-row items-center xl:items-start">
         <div className="relative flex-shrink-0 ml-6 sm:p-0">
-          <div className="absolute -left-6 sm:-left-12 w-full h-full -bottom-6 sm:-bottom-12 bg-sardagna-primary/20 -z-10" />
+          <div className="absolute -left-6 sm:-left-12 w-full h-full -bottom-6 sm:-bottom-12 bg-primary/20 -z-10" />
           <div className="relative overflow-hidden">
             <Image
               alt="gallery"
               src={data.images[0]}
-              width={800}
-              height={600}
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover max-w-[260px]"
             />
           </div>
         </div>
@@ -37,14 +35,12 @@ export default function GallerySection({ data }: GallerySectionProps) {
           </div>
           <div className="relative flex-shrink-0 flex justify-end">
             <div className="relative pr-6 sm:pr-12">
-              <div className="absolute right-0 w-[38%] h-[calc(100%+4rem)] sm:h-[calc(100%+8rem)] bottom-0 bg-sardagna-primary/20 -z-10" />
+              <div className="absolute right-0 w-[38%] h-[calc(100%+4rem)] sm:h-[calc(100%+8rem)] bottom-0 bg-primary/20 -z-10" />
               <div className="relative overflow-hidden">
                 <Image
                   alt="gallery"
                   src={data.images[1]}
-                  width={800}
-                  height={600}
-                  className="w-full xl:w-[40.5rem] 2.5xl:w-[47.5rem] h-auto mb-6 sm:mb-12 object-cover"
+                  className="w-full xl:w-[40.5rem] 2.5xl:w-[47.5rem] h-auto mb-6 sm:mb-12 object-cover max-w-[400px]"
                 />
               </div>
             </div>

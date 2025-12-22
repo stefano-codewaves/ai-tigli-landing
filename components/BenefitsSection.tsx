@@ -6,10 +6,9 @@ interface BenefitsSectionProps {
 }
 
 export default function BenefitsSection({ data }: BenefitsSectionProps) {
-
   return (
     <section className="w-full max-w-[calc(100%-3rem)] sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-7.5xl mx-auto !mt-30 sm:!mt-38 lg:!mt-20">
-      <h2 className="text-sardagna-primary text-4xl sm:text-4.5xl font-semibold !leading-tight mb-12 sm:mb-12 xl:mb-16 w-full text-left">
+      <h2 className="text-primary text-4xl sm:text-4.5xl font-semibold !leading-tight mb-12 sm:mb-12 xl:mb-16 w-full text-left">
         {data.title}
       </h2>
       <div className="w-full xl:grid grid-cols-3 gap-x-20">

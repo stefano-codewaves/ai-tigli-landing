@@ -13,13 +13,13 @@ import gallery3 from "@/public/landings/tigli/gallery/CREPUSCOLO.jpg";
 import gallery4 from "@/public/landings/tigli/gallery/bagno.jpg";
 import gallery5 from "@/public/landings/tigli/gallery/sogg1.jpg";
 import gallery6 from "@/public/landings/tigli/gallery/soggiorno05.jpg";
-import footerLeft from "@/public/landings/sardagna/svg/long/decorations/footer-left.png";
-import footerRight from "@/public/landings/sardagna/svg/long/decorations/footer-right.png";
+import footerLeft from "@/public/landings/tigli/svg/decorations/footer-left.png";
+import footerRight from "@/public/landings/tigli/svg/decorations/footer-right.png";
 
 // Benefits icons
-import icon1 from "@/public/landings/sardagna/svg/ico-1-short.svg";
-import icon2 from "@/public/landings/sardagna/svg/ico-2-short.svg";
-import icon3 from "@/public/landings/sardagna/svg/ico-3-short.svg";
+import icon1 from "@/public/landings/tigli/svg/ico-1-short.svg";
+import icon2 from "@/public/landings/tigli/svg/ico-2-short.svg";
+import icon3 from "@/public/landings/tigli/svg/ico-3-short.svg";
 
 export const tigliData: PropertyData = {
   propertyId: "tigli",
@@ -32,8 +32,8 @@ export const tigliData: PropertyData = {
     logoImage: logoImage,
     badgeImage: badgeImage,
     decorations: {
-      topLeft: "/landings/sardagna/svg/long/decorations/top-left.png",
-      topRight: "/landings/sardagna/svg/long/decorations/top-right.png",
+      topLeft: "/landings/tigli/svg/decorations/top-left.png",
+      topRight: "/landings/tigli/svg/decorations/top-right.png",
     },
   },
   timeline: {
@@ -126,15 +126,15 @@ export const tigliData: PropertyData = {
   },
   swiperGallery: {
     backgroundColor: "#eef3ef",
-    decorationImage: "/landings/sardagna/svg/long/decorations/gallery.png",
+    decorationImage: "/landings/tigli/svg/decorations/gallery.png",
     images: [gallery3, gallery4, gallery5, gallery6],
   },
   map: {
     headline: "Nel cuore della Vallagarina, a pochi minuti da Rovereto",
     ctaText: "Richiedi informazioni",
-    backgroundImage: "/landings/sardagna/map.jpg",
+    backgroundImage: "/landings/tigli/map.jpg",
     pointerImage: symbolImage,
-    decorationImage: "/landings/sardagna/svg/long/decorations/map.png",
+    decorationImage: "/landings/tigli/svg/decorations/map.png",
   },
   footer: {
     companyName: "PROGET CASA S.R.L.",

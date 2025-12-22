@@ -3,7 +3,7 @@ import logoImage from "@/public/landings/sardagna/svg/long/logo.svg";
 
 export default function Footer() {
   return (
-    <footer className="w-full relative bg-sardagna-secondary overflow-hidden">
+    <footer className="w-full relative bg-secondary overflow-hidden">
       <div
         className="absolute -left-[1px] -bottom-[1px] h-30 sm:h-44 md:h-58 xl:h-80 w-1/2 aspect-square !bg-contain pointer-events-none"
         style={{

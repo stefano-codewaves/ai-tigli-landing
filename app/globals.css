@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  /* Sardagna Colors */
-  --color-sardagna-primary: #5c9364;
-  --color-sardagna-primaryHover: #4a7a52;
-  --color-sardagna-secondary: #06373a;
+  /* Colors */
+  --color-primary: #5c9364;
+  --color-primaryHover: #4a7a52;
+  --color-secondary: #06373a;
 
   /* Custom Font Sizes - matching live site with 14px base */
   --text-xxs: 0.625rem;
