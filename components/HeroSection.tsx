@@ -16,7 +16,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
         }}
       />
 
-      <header className="flex flex-col items-center w-full bg-linear-to-b from-white/0 via-black/40 via-45% to-black/40 min-h-screen overflow-hidden">
+      <header className="flex flex-col items-center w-full bg-linear-to-b from-white/0 via-black/40 via-45% to-black/40 overflow-hidden">
         <div className="w-full max-w-[calc(100%-3rem)] sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-7.5xl mx-auto flex items-start lg:items-center">
           <div className="flex-grow">
             <Image
@@ -40,7 +40,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
         </div>
 
         <div className="w-full max-w-[calc(100%-3rem)] sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-7.5xl mx-auto mt-14 sm:mt-24 lg:mt-28 xl:mt-20 1.5xl:mt-36 mb-40 sm:mb-46 xl:mb-96">
-          <h1 className="text-white text-5.5xl sm:text-7xl xl:text-9xl 1.5xl:text-9.25xl max-w-[12.5ch] font-semibold !leading-none mb-12 sm:mb-16 text-center xl:text-left mx-auto xl:ml-0 text-balance">
+          <h1 className="text-white text-7xl sm:text-8xl xl:text-10xl max-w-[12.5ch] font-bold leading-[0.9] mb-12 sm:mb-16 text-center xl:text-left mx-auto xl:ml-0 text-balance">
             {data.headline}
           </h1>
           <div className="w-full text-center xl:text-left">
