@@ -86,16 +86,16 @@ body {
   }
 }
 
-.swiper.sardagna .swiper-slide .cover {
+.swiper.carousel .swiper-slide .cover {
   opacity: 0.6;
 }
 
-.swiper.sardagna .swiper-slide.swiper-slide-active .cover {
+.swiper.carousel .swiper-slide.swiper-slide-active .cover {
   opacity: 0 !important;
 }
 
 @media (min-width: 1280px) {
-  .swiper.sardagna .swiper-slide-next .cover {
+  .swiper.carousel .swiper-slide-next .cover {
     opacity: 0 !important;
   }
 }

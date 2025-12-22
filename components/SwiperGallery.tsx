@@ -162,7 +162,7 @@ export default function SwiperGallery({ data }: SwiperGalleryProps) {
           )}
 
           <Swiper
-            className="sardagna !overflow-visible"
+            className="carousel !overflow-visible"
             slidesPerView={1}
             centeredSlides
             spaceBetween={12}

@@ -8,7 +8,6 @@ import BenefitsSection from "@/components/BenefitsSection";
 import SwiperGallery from "@/components/SwiperGallery";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
-import { sardagnaData } from "@/data/properties/sardagna";
 import { tigliData } from "@/data/properties/tigli";
 
 export default function HomePage() {
