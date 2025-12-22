@@ -26,9 +26,9 @@ export default function GallerySection({ data }: GallerySectionProps) {
             </p>
             <a
               href="#contact-form"
-              className="border border-gray-300 inline-flex py-6.5 px-20 xl:hover:bg-black/5 transition-all"
+              className="group border border-gray-300 inline-flex py-6.5 px-20 xl:hover:bg-secondary transition-all rounded-full"
             >
-              <span className="font-semibold text-base xl:text-lg text-black !leading-none">
+              <span className="font-semibold text-base xl:text-lg text-black !leading-none group-hover:text-white transition-all">
                 {data.ctaText}
               </span>
             </a>

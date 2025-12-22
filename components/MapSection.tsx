@@ -16,12 +16,12 @@ export default function MapSection({ data }: MapSectionProps) {
             backgroundSize: "cover",
           }}
         />
-        <div
+        {/*  <div
           className="absolute right-0 -bottom-[1px] h-20 sm:h-30 md:h-40 lg:h-48 xl:h-64 w-1/2 aspect-square !bg-contain z-20"
           style={{
             background: `url('${data.decorationImage}') right bottom no-repeat`,
           }}
-        />
+        /> */}
       </div>
       <a
         href="#contact-form"
@@ -30,7 +30,7 @@ export default function MapSection({ data }: MapSectionProps) {
         <Image
           alt="icona"
           src={data.pointerImage}
-          className="w-full h-full aspect-square"
+          className="w-full h-full aspect-square relative"
         />
       </a>
       <div className="relative w-full flex flex-col max-w-[calc(100%-3rem)] sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-7.5xl mx-auto mb-20">
@@ -40,9 +40,9 @@ export default function MapSection({ data }: MapSectionProps) {
         <div>
           <a
             href="#contact-form"
-            className="border border-white/50 inline-flex py-6.5 px-20 xl:hover:bg-white/20 transition-all"
+            className="group border border-white/50 inline-flex py-6.5 px-20 xl:hover:bg-secondary transition-all rounded-full"
           >
-            <span className="font-semibold text-base xl:text-lg text-white !leading-none">
+            <span className="font-semibold text-base xl:text-lg text-white !leading-none group-hover:text-white transition-all rounded-full group-hover:bg-secondary">
               {data.ctaText}
             </span>
           </a>

@@ -2,9 +2,10 @@
 
 @theme {
   /* Colors */
-  --color-primary: #5c9364;
-  --color-primaryHover: #4a7a52;
-  --color-secondary: #06373a;
+  --color-primary: #6b2c3e;
+  --color-primaryHover: #8a4d5e;
+  --color-secondary: #6b2c3e;
+  --color-secondaryHover: #8a4d5e;
 
   /* Custom Font Sizes - matching live site with 14px base */
   --text-xxs: 0.625rem;
@@ -76,6 +77,20 @@ body {
   --tw-space-y-reverse: 0;
   margin-top: calc(12.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(12.5rem * var(--tw-space-y-reverse));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-cormorant-garamond);
+}
+
+p,
+span {
+  font-family: var(--font-manrope);
 }
 
 @media (min-width: 1280px) {

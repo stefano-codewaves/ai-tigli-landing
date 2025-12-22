@@ -50,14 +50,14 @@ export default function SwiperGallery({ data }: SwiperGalleryProps) {
       className="w-full max-w-screen slider-section py-24 sm:py-40 relative !mt-20 sm:!mt-30"
       style={{ backgroundColor: data.backgroundColor }}
     >
-      <div className="absolute top-0 left-0 w-full h-full -z-10">
+      {/* <div className="absolute top-0 left-0 w-full h-full -z-10">
         <div
           className="absolute right-0 bottom-[calc(100%-1px)] h-48 sm:h-64 xl:h-96 w-1/2 !bg-contain hidden xl:block"
           style={{
             background: `url('${data.decorationImage}') right bottom no-repeat`,
           }}
         />
-      </div>
+      </div> */}
 
       <div className="w-screen overflow-hidden">
         <div className="w-full max-w-[calc(100%-3rem)] sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-7.5xl mx-auto">
@@ -185,12 +185,12 @@ export default function SwiperGallery({ data }: SwiperGalleryProps) {
                 <a
                   href={typeof imageSrc === "string" ? imageSrc : imageSrc.src}
                   data-fancybox="gallery"
-                  className="relative group"
+                  className="relative group max-h-[316px]"
                 >
                   <Image
                     alt="gallery"
                     src={imageSrc}
-                    className="w-full h-auto"
+                    className="w-full h-auto max-h-[316px]"
                   />
                   <span className="cover absolute top-0 left-0 w-full h-full bg-black block transition-all" />
                 </a>

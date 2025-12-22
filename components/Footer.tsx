@@ -23,14 +23,14 @@ export default function Footer({ data }: FooterProps) {
       </div>
 
       <div className="text-center text-black text-xs hidden lg:block">
-        {data.companyName} - {data.address} - P. IVA: {data.vatNumber} | Made by {data.madeBy}
+        {data.companyName} - {data.address} - P. IVA: {data.vatNumber}
       </div>
 
       <div className="text-center text-black text-sm lg:hidden !leading-relaxed">
         {data.companyName} <br />
         {data.address} <br />
-        P. IVA: {data.vatNumber} | Made by {data.madeBy}
+        P. IVA: {data.vatNumber}
       </div>
     </footer>
-  )
+  );
 }

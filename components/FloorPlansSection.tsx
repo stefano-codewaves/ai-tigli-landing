@@ -36,11 +36,11 @@ export default function FloorPlansSection({ data }: FloorPlansSectionProps) {
                 currentTab === index && "active"
               )}
             >
-              <span className="text-black font-semibold text-lg sm:text-xl md:text-1.5xl xl:text-2xl !leading-relaxed group-[&.active]:!text-primary">
+              <span className="text-black font-semibold text-lg sm:text-xl md:text-1.5xl xl:text-2xl !leading-relaxed group-[&.active]:!text-secondary">
                 {plan.title}
               </span>
-              <span className="absolute left-0 w-full h-[2px] -bottom-[2px] bg-primary hidden group-[&.active]:!block">
-                <span className="absolute w-3.5 h-3.5 aspect-square -bottom-[2px] rotate-45 bg-white border-r-[2px] border-b-[2px] border-primary top-1/2 -translate-y-[calc(50%-1px)] left-1/2 -translate-x-1/2"></span>
+              <span className="absolute left-0 w-full h-[2px] -bottom-[2px] bg-secondary hidden group-[&.active]:!block">
+                <span className="absolute w-3.5 h-3.5 aspect-square -bottom-[2px] rotate-45 bg-white border-r-[2px] border-b-[2px] border-secondary top-1/2 -translate-y-[calc(50%-1px)] left-1/2 -translate-x-1/2"></span>
               </span>
             </button>
           ))}
@@ -73,9 +73,9 @@ export default function FloorPlansSection({ data }: FloorPlansSectionProps) {
             <div>
               <a
                 href={plan.pdf}
-                className="border border-gray-300 inline-flex py-6.5 px-20 xl:hover:bg-black/5 transition-all"
+                className="group border border-gray-300 inline-flex py-6.5 px-20 xl:hover:bg-secondary transition-all rounded-full"
               >
-                <span className="font-semibold text-base xl:text-lg text-black !leading-none">
+                <span className="font-semibold text-base xl:text-lg text-black !leading-none group-hover:text-white transition-all rounded-full group-hover:bg-secondary">
                   {data.downloadButtonText}
                 </span>
               </a>

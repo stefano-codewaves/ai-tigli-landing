@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="57.27" height="57.27" viewBox="0 0 57.27 57.27">
-  <g id="Raggruppa_63" data-name="Raggruppa 63" transform="translate(-3721.658 -364.681)">
-    <circle id="Ellisse_7" data-name="Ellisse 7" cx="28.135" cy="28.135" r="28.135" transform="translate(3722.158 365.181)" fill="none" stroke="#5c9364" stroke-width="1" opacity="0.3"/>
-    <g id="Raggruppa_62" data-name="Raggruppa 62">
-      <g id="Raggruppa_61" data-name="Raggruppa 61">
-        <path id="Tracciato_34" data-name="Tracciato 34" d="M3740.765,386.964l10.164-8.893,10.164,8.893Z" fill="none" stroke="#5c9364" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <rect id="Rettangolo_20" data-name="Rettangolo 20" width="15.246" height="12.705" transform="translate(3743.306 386.964)" fill="none" stroke="#5c9364" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <path id="Tracciato_35" data-name="Tracciato 35" d="M3743.306,399.669h-3.812v3.811h21.6v3.811h-21.6" fill="none" stroke="#5c9364" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <rect id="Rettangolo_21" data-name="Rettangolo 21" width="5.082" height="7.623" transform="translate(3748.387 392.046)" fill="none" stroke="#5c9364" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-      </g>
-    </g>
-  </g>
+<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_15_272)">
+<g opacity="0.3">
+<path d="M28.635 56.77C44.1735 56.77 56.77 44.1735 56.77 28.635C56.77 13.0965 44.1735 0.5 28.635 0.5C13.0965 0.5 0.5 13.0965 0.5 28.635C0.5 44.1735 13.0965 56.77 28.635 56.77Z" stroke="#6B2C3E"/>
+</g>
+<path d="M31 26V22C31 21.3333 30.6 20 29 20C27.4 20 27 21.3333 27 22V30.5351C25.8044 31.2267 25 32.5194 25 34C25 36.2091 26.7909 38 29 38C31.2091 38 33 36.2091 33 34C33 32.5194 32.1956 31.2267 31 30.5351V26ZM31 26H27" stroke="#6B2C3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_15_272">
+<rect width="57.27" height="57.27" fill="white"/>
+</clipPath>
+</defs>
 </svg>

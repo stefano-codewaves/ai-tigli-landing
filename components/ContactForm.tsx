@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import logoFormImage from "@/public/landings/tigli/svg/tigli-watermark.svg";
+import logoFormImage from "@/public/landings/tigli/svg/tigli-watermark-2.svg";
 
 export default function ContactForm() {
   const [sending, setSending] = useState(false);
@@ -151,7 +151,7 @@ export default function ContactForm() {
                     })
                   }
                   name="fullname"
-                  className="pt-4 px-4 border !border-gray-300 !border-b-primary focus:!bg-white focus:!ring-1 text-center focus:!border-primary focus:!ring-primary bg-transparent outline-none h-16 text-dark text-lg lg:text-lg peer"
+                  className="pt-4 px-4 border !border-gray-300 !border-b-secondary focus:!bg-white focus:!ring-1 text-center focus:!border-secondary focus:!ring-secondary bg-transparent outline-none h-16 text-dark text-lg lg:text-lg peer"
                   placeholder=" "
                   type="text"
                 />
@@ -179,7 +179,7 @@ export default function ContactForm() {
                     })
                   }
                   name="phone"
-                  className="pt-4 px-4 border !border-gray-300 !border-b-primary focus:!bg-white focus:!ring-1 text-center focus:!border-primary focus:!ring-primary bg-transparent outline-none h-16 text-dark text-lg lg:text-lg peer"
+                  className="pt-4 px-4 border !border-gray-300 !border-b-secondary focus:!bg-white focus:!ring-1 text-center focus:!border-secondary focus:!ring-secondary bg-transparent outline-none h-16 text-dark text-lg lg:text-lg peer"
                   placeholder=" "
                   type="text"
                 />
@@ -207,7 +207,7 @@ export default function ContactForm() {
                     })
                   }
                   name="email"
-                  className="pt-4 px-4 border !border-gray-300 !border-b-primary focus:!bg-white focus:!ring-1 text-center focus:!border-primary focus:!ring-primary bg-transparent outline-none h-16 text-dark text-lg lg:text-lg peer"
+                  className="pt-4 px-4 border !border-gray-300 !border-b-secondary focus:!bg-white focus:!ring-1 text-center focus:!border-secondary focus:!ring-secondary bg-transparent outline-none h-16 text-dark text-lg lg:text-lg peer"
                   placeholder=" "
                   type="email"
                 />
@@ -241,19 +241,19 @@ export default function ContactForm() {
                       id="privacy"
                       name="privacy"
                       type="checkbox"
-                      className="focus:ring-black opacity-0 text-primary border-transparent border-2 cursor-pointer h-7 w-7"
+                      className="focus:ring-black opacity-0 text-secondary border-transparent border-2 cursor-pointer h-7 w-7"
                     />
                     <div
                       className={`absolute w-full h-full top-0 left-0 border border-black bg-transparent pointer-events-none flex justify-center items-center ${
-                        form.privacy ? "!bg-transparent !border-primary" : ""
+                        form.privacy ? "!bg-transparent !border-secondary" : ""
                       }`}
                     >
                       <div
-                        className={`!border-2 p-[2px] md:p-[4px] !border-primary h-full w-full opacity-0 relative z-10 flex items-center justify-center ${
+                        className={`!border-2 p-[2px] md:p-[4px] !border-secondary h-full w-full opacity-0 relative z-10 flex items-center justify-center ${
                           form.privacy ? "!opacity-100 !bg-transparent" : ""
                         }`}
                       >
-                        <div className="bg-primary w-full h-full"></div>
+                        <div className="bg-secondary w-full h-full"></div>
                       </div>
                     </div>
                   </span>
@@ -286,7 +286,7 @@ export default function ContactForm() {
               <button
                 type="button"
                 onClick={checkForm}
-                className="bg-primary xl:hover:bg-primaryHover transition-all py-6.5 px-14 font-medium text-white inline-flex items-center justify-center w-full"
+                className="bg-secondary xl:hover:bg-secondaryHover transition-all py-6.5 px-14 font-medium text-white inline-flex items-center justify-center w-full"
               >
                 {sending ? (
                   <svg

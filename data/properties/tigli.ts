@@ -4,9 +4,9 @@ import plan03Image from "@/public/landings/tigli/planimetrie/0.3.jpg";
 import plan11Image from "@/public/landings/tigli/planimetrie/1.1.jpg";
 import plan12Image from "@/public/landings/tigli/planimetrie/1.2.jpg";
 import plan13Image from "@/public/landings/tigli/planimetrie/1.3.jpg";
-import logoImage from "@/public/landings/tigli/svg/logo-ai-tigli.svg";
+import logoImage from "@/public/landings/tigli/svg/logo-ai-tigli-2.svg";
 import badgeImage from "@/public/landings/tigli/svg/badge.svg";
-import symbolImage from "@/public/landings/tigli/svg/tigli-watermark.svg";
+import symbolImage from "@/public/landings/tigli/svg/tigli-watermark-2.svg";
 import gallery1 from "@/public/landings/tigli/gallery/sogg03.jpg";
 import gallery2 from "@/public/landings/tigli/gallery/singola.jpg";
 import gallery3 from "@/public/landings/tigli/gallery/CREPUSCOLO.jpg";
@@ -32,8 +32,10 @@ export const tigliData: PropertyData = {
     logoImage: logoImage,
     badgeImage: badgeImage,
     decorations: {
-      topLeft: "/landings/tigli/svg/decorations/top-left.png",
-      topRight: "/landings/tigli/svg/decorations/top-right.png",
+      topLeft: "",
+      //topLeft: "/landings/tigli/svg/decorations/top-left.png",
+      topRight: "",
+      //topRight: "/landings/tigli/svg/decorations/top-right.png",
     },
   },
   timeline: {
@@ -125,7 +127,7 @@ export const tigliData: PropertyData = {
     images: [gallery1, gallery2],
   },
   swiperGallery: {
-    backgroundColor: "#eef3ef",
+    backgroundColor: "#fbf4f6",
     decorationImage: "/landings/tigli/svg/decorations/gallery.png",
     images: [gallery3, gallery4, gallery5, gallery6],
   },

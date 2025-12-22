@@ -12,17 +12,17 @@ export default function StatisticsSection({ data }: StatisticsSectionProps) {
           <span className="text-gray-500 italic text-lg xl:text-xl !leading-none">
             {data.buildings.label}
           </span>
-          <h3 className="text-primary text-4.5xl sm:text-6xl xl:text-7xl font-bold mb-15 xl:mb-0 xl:mt-3">
+          <span className="text-primary text-4.5xl sm:text-6xl xl:text-7xl font-bold mb-15 xl:mb-0 xl:mt-3">
             {data.buildings.value}
-          </h3>
+          </span>
         </div>
         <div className="flex flex-col gap-y-4">
           <span className="text-gray-500 italic text-lg xl:text-xl !leading-none">
             {data.totalUnits.label}
           </span>
-          <h3 className="text-primary text-4.5xl sm:text-6xl xl:text-7xl font-bold mb-15 xl:mb-0 xl:mt-3">
+          <span className="text-primary text-4.5xl sm:text-6xl xl:text-7xl font-bold mb-15 xl:mb-0 xl:mt-3 font-manrope">
             {data.totalUnits.value}
-          </h3>
+          </span>
         </div>
       </div>
     </section>

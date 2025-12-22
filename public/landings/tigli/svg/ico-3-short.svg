@@ -1,28 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="57.27" height="57.27" viewBox="0 0 57.27 57.27">
-  <g id="Raggruppa_75" data-name="Raggruppa 75" transform="translate(-3981.62 -364.681)">
-    <g id="Raggruppa_74" data-name="Raggruppa 74">
-      <g id="Raggruppa_68" data-name="Raggruppa 68" opacity="0.3">
-        <circle id="Ellisse_9" data-name="Ellisse 9" cx="28.135" cy="28.135" r="28.135" transform="translate(3982.12 365.181)" fill="none" stroke="#5c9364" stroke-width="1"/>
-      </g>
-      <g id="Raggruppa_73" data-name="Raggruppa 73">
-        <circle id="Ellisse_10" data-name="Ellisse 10" cx="9.828" cy="9.828" r="9.828" transform="translate(4000.427 383.488)" fill="none" stroke="#5c9364" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        <g id="Raggruppa_69" data-name="Raggruppa 69">
-          <path id="Tracciato_40" data-name="Tracciato 40" d="M4012.875,382.178l-2.621-3.931-2.621,3.931" fill="none" stroke="#5c9364" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-          <path id="Tracciato_41" data-name="Tracciato 41" d="M4007.634,404.454l2.621,3.931,2.621-3.931" fill="none" stroke="#5c9364" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Raggruppa_70" data-name="Raggruppa 70">
-          <path id="Tracciato_42" data-name="Tracciato 42" d="M4021.393,395.937l3.931-2.621-3.931-2.621" fill="none" stroke="#5c9364" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-          <path id="Tracciato_43" data-name="Tracciato 43" d="M3999.116,390.7l-3.931,2.621,3.931,2.621" fill="none" stroke="#5c9364" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Raggruppa_71" data-name="Raggruppa 71">
-          <path id="Tracciato_44" data-name="Tracciato 44" d="M4019.984,387.293l.927-4.633-4.633.927" fill="none" stroke="#5c9364" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-          <path id="Tracciato_45" data-name="Tracciato 45" d="M4000.525,399.339l-.927,4.633,4.633-.927" fill="none" stroke="#5c9364" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-        <g id="Raggruppa_72" data-name="Raggruppa 72">
-          <path id="Tracciato_46" data-name="Tracciato 46" d="M4016.277,403.045l4.633.927-.927-4.633" fill="none" stroke="#5c9364" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-          <path id="Tracciato_47" data-name="Tracciato 47" d="M4004.231,383.587l-4.633-.927.927,4.633" fill="none" stroke="#5c9364" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-        </g>
-      </g>
-    </g>
-  </g>
+<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_15_311)">
+<path opacity="0.3" d="M28.635 56.77C44.1735 56.77 56.77 44.1735 56.77 28.635C56.77 13.0965 44.1735 0.5 28.635 0.5C13.0965 0.5 0.5 13.0965 0.5 28.635C0.5 44.1735 13.0965 56.77 28.635 56.77Z" stroke="#6B2C3E"/>
+<path d="M20 32L24.2318 26.9219C24.6316 26.4421 25.3684 26.4421 25.7682 26.9219L27.6744 29.2093M38 32L32.8575 23.4292C32.4691 22.7818 31.5309 22.7818 31.1425 23.4292L27.6744 29.2093M27.6744 29.2093L30 32M21.5 20C21 20 20 20.3 20 21.5C20 22.7 21 23 21.5 23C22 23 23 22.7 23 21.5C23 20.3 22 20 21.5 20Z" stroke="#6B2C3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="20" y1="36" x2="38" y2="36" stroke="#6B2C3E" stroke-width="2" stroke-linecap="round"/>
+</g>
+<defs>
+<clipPath id="clip0_15_311">
+<rect width="57.27" height="57.27" fill="white"/>
+</clipPath>
+</defs>
 </svg>
