@@ -8,7 +8,7 @@ export default function ContactForm() {
   const [sending, setSending] = useState(false);
   const [form, setForm] = useState({
     name: "",
-    phone: "",
+    phone: "+39 ",
     email: "",
     privacy: false,
   });
@@ -19,6 +19,21 @@ export default function ContactForm() {
     privacy: { state: null as boolean | null, message: "" },
   });
 
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    let value = e.target.value;
+
+    // Always ensure +39 prefix
+    if (!value.startsWith('+39')) {
+      value = '+39 ';
+    }
+
+    // Only allow digits and spaces after +39
+    const prefix = '+39 ';
+    const afterPrefix = value.substring(4).replace(/[^\d\s]/g, '');
+
+    setForm({ ...form, phone: prefix + afterPrefix });
+  };
+
   const checkForm = async () => {
     let isValid = true;
     const newValidation = { ...validation };
@@ -27,13 +42,24 @@ export default function ContactForm() {
     if (!form.name.trim()) {
       newValidation.name = { state: false, message: "Campo obbligatorio" };
       isValid = false;
+    } else if (form.name.trim().length < 2) {
+      newValidation.name = { state: false, message: "Minimo 2 caratteri" };
+      isValid = false;
     } else {
       newValidation.name = { state: true, message: "" };
     }
 
-    // Validate phone
-    if (!form.phone.trim()) {
+    // Validate phone (excluding the +39 prefix)
+    // Italian mobile numbers: 3XX XXXXXXX (10 digits starting with 3)
+    const phoneDigits = form.phone.replace(/[^\d]/g, '').substring(2); // Remove country code
+    if (phoneDigits.length === 0) {
       newValidation.phone = { state: false, message: "Campo obbligatorio" };
+      isValid = false;
+    } else if (!phoneDigits.startsWith('3')) {
+      newValidation.phone = { state: false, message: "Deve iniziare con 3" };
+      isValid = false;
+    } else if (phoneDigits.length !== 10) {
+      newValidation.phone = { state: false, message: "Deve essere 10 cifre (3XX XXXXXXX)" };
       isValid = false;
     } else {
       newValidation.phone = { state: true, message: "" };
@@ -63,55 +89,39 @@ export default function ContactForm() {
 
     if (!isValid) return;
 
-    // Submit form (simulated for now)
+    // Submit form
     setSending(true);
 
-    // Simulate form submission delay
-    setTimeout(() => {
-      // TODO: Uncomment this when ready to enable real submission
-      /*
-      try {
-        const formData = new URLSearchParams({
-          u: "44",
-          f: "44",
-          s: "",
-          c: "0",
-          m: "0",
-          act: "sub",
-          v: "2",
-          or: "26af25d991e273a3bb8c47010054ab4e",
-          fullname: form.name,
-          phone: form.phone,
-          email: form.email,
-          "field[2]": dayjs().format("DD/MM/YYYY HH:mm"),
-          "field[10]": "long-a",
-        });
+    try {
+      const response = await fetch("/api/submit-form", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: form.name.trim(),
+          email: form.email.trim().toLowerCase(),
+          phone: form.phone.trim(),
+          privacy: form.privacy,
+        }),
+      });
 
-        const response = await fetch(
-          "https://hausbox.activehosted.com/proc.php",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/x-www-form-urlencoded",
-            },
-            body: formData.toString(),
-          }
-        );
+      const data = await response.json();
 
-        if (response.ok) {
-          window.location.href = "/richiesta-inviata";
-        } else {
-          setSending(false);
-        }
-      } catch (error) {
-        console.error("Form submission error:", error);
+      if (response.ok && data.success) {
+        // Redirect to thank you page
+        window.location.href = "/richiesta-inviata";
+      } else {
+        // Show error message
+        const errorMessage = data.error || "Si è verificato un errore. Riprova.";
+        alert(errorMessage);
         setSending(false);
       }
-      */
-
-      // Simulated success - redirect to thank you page
-      window.location.href = "/richiesta-inviata";
-    }, 1500);
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("Errore di connessione. Verifica la tua connessione e riprova.");
+      setSending(false);
+    }
   };
 
   return (
@@ -171,7 +181,7 @@ export default function ContactForm() {
               <div className="w-full flex flex-col relative bg-white rounded-md">
                 <input
                   value={form.phone}
-                  onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                  onChange={handlePhoneChange}
                   onFocus={() =>
                     setValidation({
                       ...validation,
@@ -181,7 +191,7 @@ export default function ContactForm() {
                   name="phone"
                   className="pt-4 px-4 border !border-gray-300 !border-b-secondary focus:!bg-white focus:!ring-1 text-center focus:!border-secondary focus:!ring-secondary bg-transparent outline-none h-16 text-dark text-lg lg:text-lg peer"
                   placeholder=" "
-                  type="text"
+                  type="tel"
                 />
                 <label className="text-xxs absolute left-0 top-2.5 uppercase pointer-events-none peer-focus:!text-xxs peer-focus:!top-2.5 peer-focus:translate-y-0 peer-focus:uppercase peer-placeholder-shown:normal-case peer-placeholder-shown:text-lg peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 transition-all w-full text-center text-gray-400">
                   Telefono

@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import type { FloorPlansData } from "@/types/property";
+import DownloadModal from "./DownloadModal";
 
 interface FloorPlansSectionProps {
   data: FloorPlansData;
@@ -11,6 +12,8 @@ interface FloorPlansSectionProps {
 
 export default function FloorPlansSection({ data }: FloorPlansSectionProps) {
   const [currentTab, setCurrentTab] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedPdfUrl, setSelectedPdfUrl] = useState("");
 
   return (
     <section className="w-full max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-6.5xl mx-auto !mt-30 xl:!mt-50">
@@ -71,18 +74,29 @@ export default function FloorPlansSection({ data }: FloorPlansSectionProps) {
               {plan.size}
             </h3>
             <div>
-              <a
-                href={plan.pdf}
+              <button
+                type="button"
+                onClick={() => {
+                  setSelectedPdfUrl(plan.pdf);
+                  setIsModalOpen(true);
+                }}
                 className="group border border-gray-300 inline-flex py-6.5 px-20 xl:hover:bg-secondary transition-all rounded-full"
               >
                 <span className="font-semibold text-base xl:text-lg text-black !leading-none group-hover:text-white transition-all rounded-full group-hover:bg-secondary">
                   {data.downloadButtonText}
                 </span>
-              </a>
+              </button>
             </div>
           </div>
         </div>
       ))}
+
+      {/* Download Modal */}
+      <DownloadModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        pdfUrl={selectedPdfUrl}
+      />
     </section>
   );
 }
