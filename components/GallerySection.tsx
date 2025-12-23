@@ -15,7 +15,7 @@ export default function GallerySection({ data }: GallerySectionProps) {
             <Image
               alt="gallery"
               src={data.images[0]}
-              className="w-full h-auto object-cover max-w-[260px]"
+              className="w-full h-auto object-cover max-w-[500px]"
             />
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function GallerySection({ data }: GallerySectionProps) {
                 <Image
                   alt="gallery"
                   src={data.images[1]}
-                  className="w-full xl:w-[40.5rem] 2.5xl:w-[47.5rem] h-auto mb-6 sm:mb-12 object-cover max-w-[400px]"
+                  className="w-full xl:w-[40.5rem] 2.5xl:w-[47.5rem] h-auto mb-6 sm:mb-12 object-cover max-w-[500px]"
                 />
               </div>
             </div>
